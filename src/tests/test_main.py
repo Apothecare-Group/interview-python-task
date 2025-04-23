@@ -1,20 +1,22 @@
-def test_get_even_numbers():
-    from src.main import get_even_numbers
+from src.main import calculate_factorial
+import pytest
 
-    # Test with a standard list of integers
-    assert get_even_numbers([1, 2, 3, 4, 5, 6]) == [2, 4, 6]
-    
-    # Test with an empty list
-    assert get_even_numbers([]) == []
-    
-    # Test with a list containing only odd numbers
-    assert get_even_numbers([1, 3, 5]) == []
-    
-    # Test with a list containing only even numbers
-    assert get_even_numbers([2, 4, 6]) == [2, 4, 6]
-    
-    # Test with negative numbers
-    assert get_even_numbers([-1, -2, -3, -4]) == [-2, -4]
-    
-    # Test with a mixed list
-    assert get_even_numbers([-1, 0, 1, 2, 3, 4]) == [0, 2, 4]
+def test_calculate_factorial():
+    # Test factorial of 0
+    assert calculate_factorial(0) == 1
+
+    # Test factorial of 1
+    assert calculate_factorial(1) == 1
+
+    # Test factorial of a small positive number
+    assert calculate_factorial(5) == 120
+
+    # Test factorial of a larger positive number
+    assert calculate_factorial(10) == 3628800
+
+    # Test with invalid negative input
+    with pytest.raises(ValueError):
+        calculate_factorial(-1)
+
+    # Test factorial of a boundary case
+    assert calculate_factorial(2) == 2
