@@ -1,22 +1,22 @@
-# Python Test Repository
+# Graduate Python Developer Task Repository
 
-This repository contains a simple Python project that includes a function to filter even numbers from a list. It also includes unit tests to verify the correctness of the function.
+This repository contains a Python project designed as a coding task for graduate-level Python developers. The task involves implementing a function to calculate the factorial of a given number. The repository also includes unit tests to validate the implementation.
 
 ## Coding Task
 
 ### Task Description
 
-Write a Python function that takes a list of integers as input and returns a new list that contains only the even numbers from the original list.
+Write a Python function that takes a non-negative integer as input and returns its factorial. The factorial of a number `n` is the product of all positive integers less than or equal to `n`. For example, the factorial of 5 is `5! = 5 × 4 × 3 × 2 × 1 = 120`.
 
 ### Candidate Instructions
 
-1. Complete the function by replacing the placeholder with your solution.
-2. Ensure your solution correctly handles the input and produces the expected output.
+1. Implement the function by replacing the placeholder in the provided file with your solution.
+2. Ensure your solution handles edge cases, such as `0! = 1`, and produces the correct output for all valid inputs.
 
 ## Project Structure
 
 ```
-python-test-repo
+python-task-repo
 ├── src
 │   ├── main.py
 │   └── tests
@@ -31,7 +31,7 @@ python-test-repo
 
    ```bash
    git clone <repository-url>
-   cd python-test-repo
+   cd python-task-repo
    ```
 
 2. **Set up a virtual environment:**
@@ -58,7 +58,7 @@ python-test-repo
 
 4. **Run the main program:**
 
-   You can run the main program to see the function in action:
+   You can run the main program to test your function:
 
    ```bash
    python src/main.py
@@ -66,7 +66,7 @@ python-test-repo
 
 5. **Run the tests:**
 
-   To run the unit tests, use the following command:
+   To validate your implementation, run the unit tests using the following command:
 
    ```bash
    pytest src/tests/test_main.py
@@ -74,4 +74,4 @@ python-test-repo
 
 ## Functionality
 
-The main function `get_even_numbers` takes a list of integers as input and returns a list containing only the even numbers. The program includes a sample input to demonstrate its functionality.
+The main function `calculate_factorial` takes a non-negative integer as input and returns its factorial. The program includes sample inputs to demonstrate its functionality.
